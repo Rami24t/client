@@ -20,21 +20,6 @@ const Register = () => {
         .then(res => console.log(res))
         .catch(err => console.log(err))
     }
-
-
-
-    useEffect(() => {
-        fetch('/users/register', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ username: 'test', email: '', password: 'test' })
-        })
-        .then(res => res.json())
-        .then(res => console.log(res))
-        .catch(err => console.log(err))
-    }, [])
     
     return (
         <div>

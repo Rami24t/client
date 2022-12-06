@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState} from 'react';
 
 const Login = () => {
     const initialState = { username: '', email: '', password: '' };
@@ -8,7 +8,7 @@ const Login = () => {
     };
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch('/login', {  
+        fetch('/users/login', {  
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
