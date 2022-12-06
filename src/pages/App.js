@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import { Outlet } from 'react-router-dom'
 
 const App = () => {
  // - [ ] the login page should be at the `/login`
@@ -10,7 +11,8 @@ const App = () => {
 return (
     <div>
     <Navbar />
-        <h1>Record Shop App</h1>
+        <h1 className='mb-3'>Record Shop App</h1>
+        <Outlet />
     </div>
 )
 
